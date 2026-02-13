@@ -9,11 +9,13 @@ export const Desktop = (): JSX.Element => {
         <div className="bg-white w-full min-h-screen flex flex-col">
             {/* Header */}
             <header className="w-full border-b border-dashed border-black flex justify-center items-center py-4 lg:py-12 relative">
-                <img
-                    className="w-[200px] lg:w-[436px] h-auto object-contain"
-                    alt="MimeXMime logo"
-                    src={mxmWordLogo1}
-                />
+                <a href="https://stickers.mimexmime.com" target="_blank" rel="noopener noreferrer">
+                    <img
+                        className="w-[140px] lg:w-[305px] h-auto object-contain cursor-pointer transition-transform hover:scale-105"
+                        alt="MimeXMime logo"
+                        src={mxmWordLogo1}
+                    />
+                </a>
                 {/* Chat icon - top right */}
                 <div className="absolute top-4 right-4 lg:top-6 lg:right-6 w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex items-center justify-center">
                     <img

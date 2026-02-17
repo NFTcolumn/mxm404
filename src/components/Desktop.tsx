@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import MIMEY1 from "../assets/MIMEY.png";
 import chat1 from "../assets/Chat.png";
 import marcelOutline1 from "../assets/Marcel Outline.png";
@@ -65,14 +66,16 @@ export const Desktop = (): JSX.Element => {
             <footer className="w-full border-b border-dashed border-black flex flex-col items-center py-3 lg:py-14 gap-2 lg:gap-6">
                 {/* Links Row */}
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-1 lg:gap-16">
-                    <div className="w-[140px] lg:w-[200px] h-[32px] lg:h-[60px] border border-dashed border-black flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
-                        <span className="font-normal text-black text-[14px] lg:text-[22px]">X</span>
+                    <Link to="/x">
+                        <div className="w-[140px] lg:w-[200px] h-[32px] lg:h-[60px] border border-dashed border-black flex items-center justify-center cursor-pointer hover:bg-black hover:text-white transition-all duration-300 group">
+                            <span className="font-normal text-black group-hover:text-white text-[14px] lg:text-[22px] transition-colors">x</span>
+                        </div>
+                    </Link>
+                    <div className="w-[140px] lg:w-[200px] h-[32px] lg:h-[60px] border border-dashed border-black flex items-center justify-center cursor-pointer hover:bg-black hover:text-white transition-all duration-300 group">
+                        <span className="font-normal text-black group-hover:text-white text-[14px] lg:text-[22px] transition-colors">magasin</span>
                     </div>
-                    <div className="w-[140px] lg:w-[200px] h-[32px] lg:h-[60px] border border-dashed border-black flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
-                        <span className="font-normal text-black text-[14px] lg:text-[22px]">magasin</span>
-                    </div>
-                    <div className="w-[140px] lg:w-[200px] h-[32px] lg:h-[60px] border border-dashed border-black flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
-                        <span className="font-normal text-black text-[14px] lg:text-[22px]">la boulangerie</span>
+                    <div className="w-[140px] lg:w-[200px] h-[32px] lg:h-[60px] border border-dashed border-black flex items-center justify-center cursor-pointer hover:bg-black hover:text-white transition-all duration-300 group">
+                        <span className="font-normal text-black group-hover:text-white text-[14px] lg:text-[22px] transition-colors">la boulangerie</span>
                     </div>
                 </div>
 

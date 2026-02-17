@@ -19,7 +19,8 @@ export const Comics = (): JSX.Element => {
     const comics = [
         "/comic/001.png",
         "/comic/002.png",
-        "/comic/003.png"
+        "/comic/003.png",
+        "/comic/004.png"
     ];
 
     return (
